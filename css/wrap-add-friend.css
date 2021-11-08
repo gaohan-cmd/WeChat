@@ -1,0 +1,11 @@
+/*通讯录*/
+#wrap-add-friend{
+    height: 100%;
+    flex-grow: 1;   /*占用布局剩余部分*/
+    overflow-y: scroll;     /*裁剪剩余部分，滚动显示*/
+    background: whitesmoke;
+    display: none;  /*隐藏*/
+}
+.index{
+    margin-left: 25px;
+}

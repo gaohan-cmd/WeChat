@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--内容自适应,禁止用户缩放-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>wechat - Home</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/phone-title.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/wrap-chat.css">
+    <link rel="stylesheet" href="css/wrap-add-friend.css">
+    <link rel="stylesheet" href="css/wrap-discovery.css">
+    <link rel="stylesheet" href="css/wrap-me.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+    <script src="jquery/jquery.js"></script>
+    <script src="js/menu-bottom.js"></script>
+    <script src="js/menu-header-popup.js"></script>
+    <script src="js/moments.js"></script>
+    <link rel="stylesheet" href="css/header-menu.css">
+    <link rel="stylesheet" href="css/moments.css">
+
+</head>
+<body>
+<div id="container">
+    <!--信号、时间、电池-->
+    <div id="phone-title">
+        <!--信号-->
+        <div id="phone-title-left">
+            <div class="signal"></div>
+            <div class="signal"></div>
+            <div class="signal"></div>
+            <div class="signal"></div>
+            <div class="no-signal"></div>
+            <div>中国移动&nbsp;4G</div>
+        </div>
+        <!--时间-->
+        <div id="phone-title-center">12:00</div>
+        <!--电池电量-->
+        <div id="phone-title-right">
+            <div>88%</div>
+            <div><!--壳-->
+                <div></div><!--电量-->
+            </div>
+            <div></div><!--正极-->
+        </div>
+    </div>
+    <!--信号、时间、电池 end-->
+
+    <!--返回、信息条数、加号-->
+    <div id="header" class="header-font">
+        <!--返回-->
+        <div id="header-control">
+            <div></div>
+            <div>返回</div>
+        </div>
+        <!--信息条数-->
+        <div id="msg">微信(10)</div>
+        <!--加号-->
+        <div id="function">
+            <div id="add"></div>
+
+            <!--弹出菜单-->
+            <div id="popup-menu">
+                <!--向上箭头-->
+                <div id="small-triangle-up"></div>
+                <!--菜单内容-->
+                <div class="popup-menu-content">
+                    <div class="popup-menu-content-icon">
+                        <img src="img/icon/control/发起群聊.svg"/>
+                    </div>
+                    <div>发起群聊</div>
+                </div>
+                <div class="popup-menu-content">
+                    <div class="popup-menu-content-icon">
+                        <img src="img/icon/control/添加朋友.svg"/>
+                    </div>
+                    <div>添加朋友</div>
+                </div>
+                <div class="popup-menu-content">
+                    <div class="popup-menu-content-icon">
+                        <img src="img/icon/control/扫一扫.svg"/>
+                    </div>
+                    <div>扫一扫</div>
+                </div>
+                <div class="popup-menu-content">
+                    <div class="popup-menu-content-icon">
+                        <img src="img/icon/control/收付款.svg"/>
+                    </div>
+                    <div>收付款</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--返回、信息条数、加号 end-->
+
+
+    <!--微信、通讯录 、发现我4个区-->
+    <div id="wrap-chat">
+        <!--搜索框-->
+        <div id="search">
+            <input/>
+        </div>
+        <!--对话列表-->
+        <div id="lists">
+            <!--每个消息-->
+            <div class="content">
+                <!--头像-->
+                <div class="content-left">
+                    <img src="img/photo/郭德纲.jpg"/>
+                </div>
+                <!--用户名和聊天信息-->
+                <div class="content-center">
+                    <div class="username">Zyw-haha</div>
+                    <div class="text">用户名和聊天信息用户名和聊天信息</div>
+                </div>
+                <!--时间-->
+                <div class="content-right">8:10</div>
+            </div>
+
+            <!--###############重复内容##############-->
+            <div class="content">
+                <div class="content-left">
+                    <img src="img/photo/三胖-01.jpg">
+                    <div class="new-msg">1</div>
+                </div>
+                <div class="content-center">
+                    <div class="username">金三胖</div>
+                    <div class="text">以后和USA是好哥们了</div>
+                </div>
+                <div class="content-right">9:45</div>
+            </div>
+
+            <div class="content">
+                <div class="content-left">
+                    <img src="img/photo/女孩-01.jpeg">
+                </div>
+                <div class="content-center">
+                    <div class="username">睡不醒</div>
+                    <div class="text-radio">[语音]</div>
+                </div>
+                <div class="content-right">昨天</div>
+            </div>
+
+            <div class="content">
+                <div class="content-left">
+                    <img src="img/photo/川普-01.jpg">
+                </div>
+                <div class="content-center">
+                    <div class="username">特朗普</div>
+                    <div class="text">今晚我直播，请大家来捧场 @安倍 </div>
+                </div>
+                <div class="content-right">13:00</div>
+            </div>
+
+            <div class="content">
+                <div class="content-left">
+                    <img src="img/photo/情侣-01.jpg">
+                </div>
+                <div class="content-center">
+                    <div class="username">我是90后</div>
+                    <div class="text-radio">[语音]</div>
+                </div>
+                <div class="content-right">2017/5/27</div>
+            </div>
+
+            <div class="content">
+                <div class="content-left">
+                    <img src="img/photo/女孩-02.jpeg">
+                </div>
+                <div class="content-center">
+                    <div class="username">学霸</div>
+                    <div class="text">毕业了，希望大家都有个好的前程</div>
+                </div>
+                <div class="content-right">2017/4/21</div>
+            </div>
+
+            <div class="content">
+                <div class="content-left">
+                    <img src="img/photo/汉堡.jpg">
+                    <div class="new-msg">3</div>
+                </div>
+                <div class="content-center">
+                    <div class="username">汉堡王</div>
+                    <div class="text">下课了下课了，下课了，我给你带一份汉堡？</div>
+                </div>
+                <div class="content-right">2017/1/31</div>
+            </div>
+
+            <div class="content">
+                <div class="content-left">
+                    <img src="img/photo/男孩-01.jpg">
+                </div>
+                <div class="content-center">
+                    <div class="username">小王子</div>
+                    <div class="text">很喜欢学习 H5 知识</div>
+                </div>
+                <div class="content-right">2016/6/3</div>
+            </div>
+
+            <div class="content">
+                <div class="content-left">
+                    <img src="img/photo/奥巴马-02.jpg">
+                </div>
+                <div class="content-center">
+                    <div class="username">Obama</div>
+                    <div class="text">天太热啦...</div>
+                </div>
+                <div class="content-right">2016/6/1</div>
+            </div>
+
+            <div class="content">
+                <div class="content-left">
+                    <img src="img/photo/elm.jpg">
+                </div>
+                <div class="content-center">
+                    <div class="username">饿了么</div>
+                    <div class="text">谁还需要优惠卷</div>
+                </div>
+                <div class="content-right">2016/8/1</div>
+            </div>
+
+            <div class="content">
+                <div class="content-left">
+                    <img src="img/photo/java.png">
+                </div>
+                <div class="content-center">
+                    <div class="username">Java 22 Years</div>
+                    <div class="text">我用20多年的岁月, 颠覆了人类历史</div>
+                </div>
+                <div class="content-right">2016/4/12</div>
+            </div>
+
+            <div class="content">
+                <div class="content-left">
+                    <img src="img/photo/马化腾.png">
+                </div>
+                <div class="content-center">
+                    <div class="username">马总</div>
+                    <div class="text">别废话 ， 充钱了么？</div>
+                </div>
+                <div class="content-right">2015/4/12</div>
+            </div>
+
+            <div class="content">
+                <div class="content-left">
+                    <img src="img/photo/王者荣耀.jpg">
+                </div>
+                <div class="content-center">
+                    <div class="username">王者荣耀</div>
+                    <div class="text">抗塔强杀、团灭超神</div>
+                </div>
+                <div class="content-right">2015/4/12</div>
+            </div>
+            <!--###############重复内容结束##################-->
+
+
+
+        </div>
+    </div>
+
+
+    <div id="wrap-add-friend">
+        <!--每组容器-->
+        <div class="groups">
+            <div class="group-item">
+                <div class="group-item-left">
+                    <img src="img/icon/dicovery/朋友圈.svg"/>
+                </div>
+                <div class="group-item-center">新的朋友</div>
+            </div>
+            <div class="group-item">
+                <div class="group-item-left ">
+                    <img src="img/icon/dicovery/摇一摇.svg" />
+                </div>
+                <div class="group-item-center ">群聊</div>
+            </div>
+            <div class="group-item">
+                <div class="group-item-left ">
+                    <img src="img/icon/dicovery/摇一摇.svg" />
+                </div>
+                <div class="group-item-center ">标签</div>
+            </div>
+        </div>
+        <div>
+            <div class="index">A</div>
+        </div>
+        <div class="p-groups">
+            <div class="group-item">
+                <div class="group-item-left">
+                    <img src="img/icon/dicovery/朋友圈.svg"/>
+                </div>
+                <div class="group-item-center">阿三</div>
+            </div>
+            <div class="group-item">
+                <div class="group-item-left ">
+                    <img src="img/icon/dicovery/摇一摇.svg" />
+                </div>
+                <div class="group-item-center ">阿四</div>
+            </div>
+            <div class="group-item">
+                <div class="group-item-left ">
+                    <img src="img/icon/dicovery/摇一摇.svg" />
+                </div>
+                <div class="group-item-center ">阿五</div>
+            </div>
+        </div>
+        <div class="index">B</div>
+        <div class="p-groups">
+            <div class="group-item">
+                <div class="group-item-left">
+                    <img src="img/icon/dicovery/朋友圈.svg"/>
+                </div>
+                <div class="group-item-center">北元</div>
+            </div>
+            <div class="group-item">
+                <div class="group-item-left ">
+                    <img src="img/icon/dicovery/摇一摇.svg" />
+                </div>
+                <div class="group-item-center ">北始</div>
+            </div>
+            <div class="group-item">
+                <div class="group-item-left ">
+                    <img src="img/icon/dicovery/摇一摇.svg" />
+                </div>
+                <div class="group-item-center ">北终</div>
+            </div>
+        </div>
+        <div style="text-align: center;margin-top: 10px" >6位朋友</div>
+    </div>
+
+
+    <div id="wrap-discovery">
+        <!--每组容器-->
+        <div class="groups">
+            <div class="group-item" id="moment">
+                <div class="group-item-left">
+                    <img src="img/icon/dicovery/朋友圈.svg"/>
+                </div>
+                <div class="group-item-center">朋友圈</div>
+                <div class="group-item-right"></div>
+            </div>
+        </div>
+
+        <!--################重复内容####################-->
+        <div class="groups">
+            <div class="group-item">
+                <div class="group-item-left">
+                    <img src="img/icon/dicovery/扫一扫.svg" />
+                </div>
+                <div class="group-item-center ">扫一扫</div>
+                <div class="group-item-right"></div>
+            </div>
+
+            <div class="group-item">
+                <div class="group-item-left ">
+                    <img src="img/icon/dicovery/摇一摇.svg" />
+                </div>
+                <div class="group-item-center ">摇一摇</div>
+                <div class="group-item-right"></div>
+            </div>
+
+            <div class="group-item">
+                <div class="group-item-left ">
+                    <img src="img/icon/dicovery/搜一搜.svg" />
+                </div>
+                <div class="group-item-center ">搜一搜</div>
+                <div class="group-item-right"></div>
+            </div>
+
+            <div class="group-item">
+                <div class="group-item-left ">
+                    <img src="img/icon/dicovery/看一看.svg" />
+                </div>
+                <div class="group-item-center ">看一看</div>
+                <div class="group-item-right"></div>
+            </div>
+        </div>
+
+
+        <div class="groups">
+            <div class="group-item">
+                <div class="group-item-left">
+                    <img src="img/icon/dicovery/附近的人.svg" />
+                </div>
+                <div class="group-item-center ">附近的人</div>
+                <div class="group-item-right"></div>
+            </div>
+
+            <div class="group-item">
+                <div class="group-item-left ">
+                    <img src="img/icon/dicovery/漂流瓶.svg" />
+                </div>
+                <div class="group-item-center ">漂流瓶</div>
+                <div class="group-item-right"></div>
+            </div>
+        </div>
+
+        <div class="groups">
+            <div class="group-item">
+                <div class="group-item-left">
+                    <img src="img/icon/dicovery/购物.svg" />
+                </div>
+                <div class="group-item-center ">购物</div>
+                <div class="group-item-right"></div>
+            </div>
+
+            <div class="group-item">
+                <div class="group-item-left ">
+                    <img src="img/icon/dicovery/游戏.svg" />
+                </div>
+                <div class="group-item-center ">游戏</div>
+                <div class="group-item-right"></div>
+            </div>
+        </div>
+
+
+        <div class="groups">
+            <div class="group-item">
+                <div class="group-item-left">
+                    <img src="img/icon/dicovery/小程序.svg" />
+                </div>
+                <div class="group-item-center ">小程序</div>
+                <div class="group-item-right"></div>
+            </div>
+        </div>
+        <!--################重复内容 结束####################-->
+
+    </div>
+
+
+    <div id="wrap-me">
+        <div id="person">
+            <div class="group-item">
+                <div class="group-item-left">
+                    <img src="img/icon/dicovery/游戏.svg" />
+                </div>
+                <div class="person-center">
+                    <div>安山落花</div>
+                    <div style="font-size: 12px;color:#616161;margin-top: 10px">微信号：GHan</div>
+                </div>
+                <div class="person-right"></div>
+            </div>
+
+        </div>
+        <div class="groups">
+            <div class="group-item">
+                <div class="group-item-left">
+                    <img src="img/icon/dicovery/小程序.svg" />
+                </div>
+                <div class="group-item-center ">支付</div>
+            </div>
+        </div>
+        <div class="groups">
+            <div class="group-item">
+                <div class="group-item-left">
+                    <img src="img/icon/dicovery/小程序.svg" />
+                </div>
+                <div class="group-item-center ">收藏</div>
+            </div>
+            <div class="group-item">
+                <div class="group-item-left">
+                    <img src="img/icon/dicovery/小程序.svg" />
+                </div>
+                <div class="group-item-center ">朋友圈</div>
+            </div>
+            <div class="group-item">
+                <div class="group-item-left">
+                    <img src="img/icon/dicovery/小程序.svg" />
+                </div>
+                <div class="group-item-center ">卡包</div>
+            </div>
+        </div>
+        <div class="groups">
+            <div class="group-item">
+                <div class="group-item-left">
+                    <img src="img/icon/dicovery/小程序.svg" />
+                </div>
+                <div class="group-item-center ">设置</div>
+            </div>
+        </div>
+    </div>
+    <!--微信、通讯录 、发现我4个区 end-->
+    <!--朋友圈页面-->
+    <div id="moments">
+        <!--用户背景-->
+        <div id="huge-screen">
+            <!--用户信息-->
+            <div id="user">
+                <div id="user-name">马化腾</div>
+                <div id="user-photo">
+                    <img src="img/photo/马化腾.png">
+                </div>
+            </div>
+        </div>
+        <!--新消息通知-->
+        <div id="notification"></div>
+        <!--信息列表-->
+        <div id="moments-list">
+            <!--每个信息-->
+            <div class="moment-content">
+                <!--左侧好友头像-->
+                <div class="moment-content-left">
+                    <img src="img/photo/王者荣耀.jpg">
+                </div>
+                <!--右侧消息-->
+                <div class="moment-content-right">
+                    <!--用户名和信息-->
+                    <div class="moment-content-username">Zzy-haha</div>
+                    <div class="moment-content-text">朋友圈消息阿桑的歌发挥教师的按顺序八十多把看看</div>
+                    <!--信息内容的图片-->
+                    <div class="moment-content-imgs">
+                        <div class="user-imgs" data-img="img/images/porsche-normal.jpg"></div>
+                    </div>
+                    <!--回复区-->
+                    <div class="moment-function">
+                        <!--时间-->
+                        <div class="moment-function-time">11分钟前</div>
+                        <!--右侧弹出-->
+                        <div class="moment-function-right">
+                            <div class="moment-function-control">
+                                <div>
+                                    <div></div>
+                                    <div>赞</div>
+                                </div>
+                                <div>
+                                    <div></div>
+                                    <div>评论</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--回复区向上箭头-->
+                    <div id="triangle-up"></div>
+                    <!--赞和评论容器-->
+                    <div class="comments-board">
+                        <div class="upvotes">
+                            <div class="upvotes-img"></div>  <!--心形-->
+                            <div class="upvotes-names">
+                                <div class="name">马化腾,</div>
+                                <div class="name">王思聪</div>
+                            </div>
+                        </div>
+                        <!--评论区-->
+                        <div class="comments">
+                            <div class="comment">
+                                <div class="comment-name">马化腾：</div>
+                                <div class="comment-content">腾讯以后靠你了</div>
+                            </div>
+                            <div class="comment">
+                                <div class="comment-name">同学小王：</div>
+                                <div class="comment-content">下午放假开心</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- ##############评论区重复内容##############-->
+
+            <div class="moment-content">
+                <div class="moment-content-left">
+                    <img src="img/photo/郭德纲.jpg"  />
+                </div>
+                <div class="moment-content-right">
+                    <div class="moment-content-username">郭德纲</div>
+                    <div class="moment-content-text">这都是哪 ? 光拍照了 忘了地名 .  </div>
+                    <div class="moment-content-imgs">
+                        <div class="user-imgs" data-img="img/images/建筑-01.jpg"></div>
+                        <div class="user-imgs" data-img="img/images/建筑-02.jpg"></div>
+                        <div class="user-imgs" data-img="img/images/建筑-03.jpg"></div>
+                    </div>
+                    <div class="moment-function">
+                        <div class="moment-function-time">42分钟前</div>
+                        <div class="moment-function-right">
+                            <div class="moment-function-control">
+                                <div >
+                                    <div></div>
+                                    <div>赞</div>
+                                </div>
+                                <div>
+                                    <div></div>
+                                    <div>评论</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--箭头，赞，评论区-->
+                    <div class=""></div>
+                </div>
+            </div>
+            <!--######################################################-->
+            <div class="moment-content">
+                <div class="moment-content-left">
+                    <img src="img/photo/王者荣耀.jpg"/>
+                </div>
+                <div class="moment-content-right">
+                    <div class="moment-content-username">BootStrap</div>
+                    <div class="moment-content-text">这个做我们项目的背景图如何? 大家说说</div>
+                    <div class="moment-content-imgs">
+                        <div class="user-imgs" data-img="img/images/旅游-01.png" ></div>
+                    </div>
+                    <div class="moment-function">
+                        <div class="moment-function-time">42分钟前</div>
+                        <div class="moment-function-right">
+                            <div class="moment-function-control">
+                                <div >
+                                    <div></div>
+                                    <div>赞</div>
+                                </div>
+                                <div>
+                                    <div></div>
+                                    <div>评论</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--箭头，赞，评论区-->
+                    <div class=""></div>
+                </div>
+            </div>
+            <!-- ##############评论区重复内容 end ##############-->
+        </div>
+    </div>
+
+    <div id="menu">
+        <!--聊天按钮-->
+        <div class="menu-div"
+             data-icon-normal="img/icon/menu/聊天.svg"
+             data-icon-press="img/icon/menu/聊天-press.svg"
+             data-target="wrap-chat">
+            <img class="icon" src="img/icon/menu/聊天-press.svg" style="transform: scale(1.2)"/>
+            <div class="font-menu">微信</div>
+        </div>
+
+        <!--通讯录按钮-->
+        <div class="menu-div"
+             data-icon-normal="img/icon/menu/通讯录.svg"
+             data-icon-press="img/icon/menu/通讯录-press.svg"
+             data-target="wrap-add-friend">
+            <img class="icon" src="img/icon/menu/通讯录.svg"/>
+            <div class="font-menu">通讯录</div>
+        </div>
+
+        <!--发现按钮-->
+        <div class="menu-div"
+             data-icon-normal="img/icon/menu/发现.svg"
+             data-icon-press="img/icon/menu/发现-press.svg"
+             data-target="wrap-discovery">
+            <img class="icon" src="img/icon/menu/发现.svg" style="transform: scale(.9)"/>
+            <div class="font-menu">发现</div>
+        </div>
+
+        <!--我按钮-->
+        <div class="menu-div"
+             data-icon-normal="img/icon/menu/me.svg"
+             data-icon-press="img/icon/menu/me-press.svg"
+             data-target="wrap-me">
+            <img class="icon" src="img/icon/menu/me.svg" style="transform: scale(.9)"/>
+            <div class="font-menu">我</div>
+        </div>
+
+    </div>
+
+
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
